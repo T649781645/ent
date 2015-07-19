@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<title>拼图前端框架HTML模版</title>
+  <meta name="keywords" content="关键词" />
+  <meta name="description" content="描述" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
+  <link href="favicon.ico" rel="bookmark icon" />
+  <link rel="stylesheet" href="pintuer/pintuer.css">
+  <style type="text/css">
+    <!--
+      .item img {
+        width:100%;
+        height:200px;
+      }
+    -->
+  </style>
+  <script src="pintuer/jquery.js"></script>
+  <script src="pintuer/pintuer.js"></script>
+  <script src="pintuer/respond.js"></script>
+</head>
+<body>
+<div class="container">
+  <!-- 顶部开始 -->
+  <div class="layout bg hidden-l">
+    <div class="container-layout height-big">
+      <span class="float-right">
+        <a href="#">注册</a>
+        <span class="text-little text-gray">|</span>
+        <a href="#">登录</a>
+        <span class="text-little text-gray">|</span>
+        <a href="#">联系</a>
+      </span>
+      欢迎使用拼图前端框架
+    </div>
+  </div>
+  <!-- 顶部结束 -->
+  <!-- 导航开始 -->
+  <div class="margin-top margin-bottom navbar bg-blue bg-inverse radius">
+    <!-- logo begin -->
+    <div class="navbar-head">
+      <button class="button icon-navicon" data-target="#navbar1"></button>
+      <a href="#"><img class="logo" src="30-white.png" /></a>
+    </div>
+    <!-- logo end -->
+    <!-- navbar begin -->
+    <div class="navbar-body nav-navicon" id="navbar1">
+      <ul class="nav nav-inline nav-menu nav-big">
+        <li class="active"><a href="#">首页</a></li>
+        <li><a href="#">相册</a></li>
+        <li><a href="#">日志</a></li>
+        <li><a href="#">音乐</a></li>
+        <li><a href="#">留言</a></li>
+        <li class="nav-more"><a href="#">更多<span class="arrow"></span></a>
+          <ul class="drop-menu">
+            <li><a href="#">访客</a></li>
+            <li><a href="#">资料<span class="arrow"></span></a>
+              <ul>
+                <li><a href="#">情感</a></li>
+                <li><a href="#">学历</a></li>
+                <li><a href="#">收入</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- navbar end -->
+  </div>
+  <!-- 导航结束 -->
+  <!-- 面包屑开始 -->
+  <ul class="bread bg-gray bg-inverse radius-none">
+    <li><a href="#" class="icon-home"> 首页</a></li>
+    <li><a href="#">新闻中心</a></li>
+    <li><a href="#">公司新闻</a></li>
+    <li>正文</li>
+  </ul>
+  <!-- 面包屑结束 -->
+  <!-- Banner begin -->
+  <div class="banner">
+    <div class="carousel">
+      <div class="item"><img class="radius" src="img/1.jpg"></div>
+      <div class="item"><img class="radius" src="img/2.jpg"></div>
+      <div class="item"><img class="radius" src="img/3.jpg"></div>
+    </div>
+  </div>
+  <!-- Banner end -->
+  <!-- 主体开始 -->
+  <div class="margin-top margin-bottom">
+    <!-- 主体左侧开始 -->
+    <div class="xl3">
+      <!-- 列表开始 -->
+      <div class="list-link">
+        <a href="#">拼图前端框架</a>
+        <a href="#" class="active"><span class="float-right badge bg-main">6</span>最近更新</a>
+        <a href="#"><span class="float-right">2015-4-15</span>显示发布时间</a>
+        <a href="#"><span class="float-right tag">热门</span>标签的使用</a>
+        <a href="#">方便个性化的前端框架</a>
+        <a href="#">为什么选择拼图框架？</a>
+      </div>
+      <!-- 列表结束 -->
+      <!-- 面板开始 -->
+      <div class="panel margin-top">
+        <div class="panel-head bg-blue bg-inverse"><h4>关于我</h4></div>
+        <div class="panel-body">要做自己,看清真实的自我,要拿出十二分的信心,告诉自己这就是我, 不要与别人相同。亮出自己的优点,追求自己的个性,做自己最好。</div>
+      </div>
+      <!-- 面板结束 -->
+    </div>
+    <!-- 主体坐侧结束 -->
+    <!-- 主体右侧开始 -->
+    <div class="xl9">
+      <div class="margin-left radius bg-blue bg-inverse keypoint bg text-center">
+        <h1>你好，拼图!</h1>
+        <p>国内优秀的HTML、CSS、JS跨屏响应式前端框架，自动适应电脑、平板、手机等设备，让前端开发更简单、快速、便捷。</p>
+        <p><button class="button bg-main">详细介绍</button></p>
+      </div>
+    </div>
+    <!-- 主体右侧结束 -->
+  </div>
+  <!-- 主体结束 -->
+  <div class="clearfix"><!-- 清除栅格系统的浮动，无特殊作用 --></div>
+  <!-- 分页导航条开始 -->
+  <div class="text-center">
+    <ul class="margin pagination pagination-group border-sub">
+      <li><a href="#">«</a></li>
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">»</a></li>
+    </ul>
+  </div>
+  <!-- 分页导航条结束 -->
+  <!-- 页脚开始 -->
+  <div class="margin-top text-center">
+    <div class="hidden-l">
+      <ul class="nav-inline">
+        <li><a href="#">网站首页</a></li>
+        <li><a href="#">新闻资讯</a></li>
+        <li><a href="#">产品中心</a></li>
+        <li><a href="#">技术反馈</a></li>
+        <li><a href="#">留言反馈</a></li>
+        <li><a href="#">联系方式</a></li>
+      </ul>
+    </div>
+    <div class="height-big">版权所有 © Pintuer.com All Rights Reserved，图ICP备：380959609</div>
+  </div>
+  <!-- 页脚结束 -->
+</div>
+</body>
+</html>
